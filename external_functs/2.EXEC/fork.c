@@ -2,7 +2,7 @@
 #include <unistd.h>
 #include <sys/wait.h>
 
-// Ce programme montre comment fork() gere les PID lors de la creation d'un nouveau processus.
+// fork() cree un clone du processus et gere les PID lors de la creation d'un nouveau processus.
 //
 // PARENT	-> PID = 1234	|	pid (= fork) = 4321 (PID enfant);
 // ENFANT	-> PID = 4321	|	pid (= fork) = 0
