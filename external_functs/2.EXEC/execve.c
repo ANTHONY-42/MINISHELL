@@ -1,4 +1,5 @@
 #include <unistd.h>
+#include <stdio.h>
 
 //	Execve(av[1], &av[1], envp) tue et remplace le program actuel par un autre;
 //	Parametre de fonction :
@@ -9,7 +10,7 @@
 int main(int ac, char **av, char **envp)
 {
 	if (ac < 2)
-		return (perror("Error: arg"), 1);
+		return ((perror("Error: arg")), 1);
 
 	execve(av[1], &av[1], envp);
 	perror("Error: execve");
