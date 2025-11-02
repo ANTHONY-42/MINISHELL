@@ -10,18 +10,18 @@ wait, X
 waitpid, X
 wait3, X
 wait4, X
-signal,
-sigaction,
-sigemptyset,
-sigaddset,
-kill,
-exit,
-getcwd,
-chdir,
-stat,
-lstat,
-fstat,
-unlink,
+signal, X
+sigaction, X
+sigemptyset, X
+sigaddset, X
+kill, X
+exit, X
+getcwd, X
+chdir, X
+stat, X
+lstat, X
+fstat, X
+unlink, X
 execve, X
 dup,
 dup2,
