@@ -23,16 +23,16 @@ lstat, X
 fstat, X
 unlink, X
 execve, X
-dup,
-dup2,
-pipe,
-opendir,
-readdir,
-closedir,
-strerror,
-perror,
-isatty,
-ttyname,
+dup, X
+dup2, X
+pipe, X
+opendir, X
+readdir, X
+closedir, X
+strerror, X
+perror, X
+isatty, X
+ttyname, X
 ttyslot,
 ioctl,
 getenv,
