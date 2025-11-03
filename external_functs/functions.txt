@@ -38,7 +38,7 @@ ioctl, X
 getenv, X
 tcsetattr, X
 tcgetattr, X
-tgetent, X
+tgetent, X?
 tgetflag, X
 tgetnum, X
 tgetstr, X

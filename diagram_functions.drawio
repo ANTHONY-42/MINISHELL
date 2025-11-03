@@ -1,53 +1,272 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.17 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.17">
   <diagram name="Page-1" id="q4K_NyIVB4ZAeZCmN4ck">
-    <mxGraphModel dx="1702" dy="1687" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="6177" dy="3239" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="jyg59a62tsU4S-DTDQie-1" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="-130" y="-40" width="750" height="750" as="geometry" />
+        <mxCell id="jyg59a62tsU4S-DTDQie-1" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="-410" y="-40" width="1030" height="1030" as="geometry" />
         </mxCell>
-        <mxCell id="jyg59a62tsU4S-DTDQie-2" value="EXEC" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="215" y="-30" width="60" height="30" as="geometry" />
+        <mxCell id="jyg59a62tsU4S-DTDQie-2" value="EXEC" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="75" y="-30" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="jyg59a62tsU4S-DTDQie-3" value="fork" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="jyg59a62tsU4S-DTDQie-3" value="fork" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="55" y="30" width="160" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="jyg59a62tsU4S-DTDQie-4" value="wait" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="xASSBUbP35211GiZsTTk-6" value="creer un processus enfant avec un PID. Retourne le PID de l&#39;enfant, si l&#39;enfant fork, retourne 0" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="jyg59a62tsU4S-DTDQie-3">
+          <mxGeometry y="25" width="160" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="jyg59a62tsU4S-DTDQie-4" value="wait" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="230" y="30" width="160" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="jyg59a62tsU4S-DTDQie-5" value="wait3" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="xASSBUbP35211GiZsTTk-7" value="retourne le status du PID. Attend n&#39;importe quel enfant" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="jyg59a62tsU4S-DTDQie-4">
+          <mxGeometry y="25" width="160" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="jyg59a62tsU4S-DTDQie-5" value="wait3" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="334" y="120" width="160" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="jyg59a62tsU4S-DTDQie-6" value="waitpid" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="xASSBUbP35211GiZsTTk-9" value="Comme wait, mais ajoute des stats" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="jyg59a62tsU4S-DTDQie-5">
+          <mxGeometry y="25" width="160" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="jyg59a62tsU4S-DTDQie-6" value="waitpid" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="150" y="120" width="160" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="jyg59a62tsU4S-DTDQie-7" value="wait4" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="xASSBUbP35211GiZsTTk-8" value="attend la fin d&#39;un processus particulier" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="jyg59a62tsU4S-DTDQie-6">
+          <mxGeometry y="25" width="160" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="jyg59a62tsU4S-DTDQie-7" value="wait4" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="420" y="220" width="160" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="jyg59a62tsU4S-DTDQie-8" value="execve" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="xASSBUbP35211GiZsTTk-10" value="Comme waitpid, mais ajoute des stats" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="jyg59a62tsU4S-DTDQie-7">
+          <mxGeometry y="20" width="160" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="jyg59a62tsU4S-DTDQie-8" value="execve" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="230" y="220" width="160" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="jyg59a62tsU4S-DTDQie-9" value="dup" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="xASSBUbP35211GiZsTTk-4" value="execute un autre programme et tue l&#39;ancien" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="jyg59a62tsU4S-DTDQie-8">
+          <mxGeometry y="25" width="160" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="jyg59a62tsU4S-DTDQie-9" value="dup" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="55" y="220" width="160" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="jyg59a62tsU4S-DTDQie-10" value="dup2" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="xASSBUbP35211GiZsTTk-3" value="permet de rediriger un FD" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="jyg59a62tsU4S-DTDQie-9">
+          <mxGeometry y="25" width="160" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="jyg59a62tsU4S-DTDQie-10" value="dup2" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-30" y="120" width="160" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="jyg59a62tsU4S-DTDQie-11" value="pipe" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="jyg59a62tsU4S-DTDQie-11" value="pipe" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-110" y="220" width="160" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="jyg59a62tsU4S-DTDQie-12" value="opendir" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-105" y="320" width="160" height="80" as="geometry" />
+        <mxCell id="jyg59a62tsU4S-DTDQie-13" value="readdir" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="70" y="320" width="160" height="82.5" as="geometry" />
         </mxCell>
-        <mxCell id="jyg59a62tsU4S-DTDQie-13" value="readdir" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="70" y="320" width="160" height="80" as="geometry" />
+        <mxCell id="xASSBUbP35211GiZsTTk-60" value="prend un DIR* en parametre et retourne le flux de repertoire dans une struct dirent" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="jyg59a62tsU4S-DTDQie-13">
+          <mxGeometry y="25" width="160" height="55" as="geometry" />
         </mxCell>
-        <mxCell id="jyg59a62tsU4S-DTDQie-14" value="closedir" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="254" y="320" width="160" height="80" as="geometry" />
+        <mxCell id="xASSBUbP35211GiZsTTk-1" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="-1310" y="-90" width="860" height="860" as="geometry" />
         </mxCell>
-        <mxCell id="jyg59a62tsU4S-DTDQie-15" value="strerror" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="440" y="320" width="160" height="80" as="geometry" />
+        <mxCell id="xASSBUbP35211GiZsTTk-2" value="PA&lt;span style=&quot;background-color: initial;&quot;&gt;RSING&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-910" y="-80" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-11" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="670" y="-60" width="1370" height="1370" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-12" value="FILESYSTEM" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1270" y="-30" width="95" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-14" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="760" y="110" width="510" height="510" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-15" value="DIRECTORY" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="985" y="120" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-17" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="1360" y="85" width="580" height="580" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-18" value="FILE" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1602.5" y="100" width="95" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-19" value="access" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1494" y="140" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-20" value="Verifie l&#39;existence d&#39;un fichier" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="xASSBUbP35211GiZsTTk-19">
+          <mxGeometry y="25" width="160" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-21" value="chdir" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="860" y="180" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-22" value="Change le repertoire de travail courant" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="xASSBUbP35211GiZsTTk-21">
+          <mxGeometry y="25" width="160" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-23" value="closedir" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="180" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-24" value="Appellee apres opendir, ferme un repertoire" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="xASSBUbP35211GiZsTTk-23">
+          <mxGeometry y="25" width="160" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-25" value="Duplique un fd, pour le rediriger vers un autre fd (comme 2 pour erreur)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-30" y="145" width="160" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-26" value="exit" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-70" y="420" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-27" value="Ferme le processus courant avec une valeur de retour en parametre" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-70" y="445" width="160" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-28" value="fstat" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1660" y="140" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-29" value="Recupere une struct stat d&#39;un filedescriptor" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="xASSBUbP35211GiZsTTk-28">
+          <mxGeometry y="25" width="160" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-30" value="getcwd" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="790" y="270" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-31" value="Retourne le repertoire courant" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="xASSBUbP35211GiZsTTk-30">
+          <mxGeometry y="25" width="160" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-32" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="470" y="-670" width="640" height="640" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-33" value="ENVIRONNEMENT" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="760" y="-640" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-34" value="getenv" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="-580" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-35" value="Retourne le contenu d&#39;une variable d&#39;environnement passee en parametre" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="xASSBUbP35211GiZsTTk-34">
+          <mxGeometry y="25" width="160" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-36" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="690" y="-450" width="360" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-37" value="TERMINAL" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="840" y="-440" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-38" value="ioctl" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="740" y="-410" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-39" value="Retourne une struct winsize avec les dimensions du terminal" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="xASSBUbP35211GiZsTTk-38">
+          <mxGeometry y="25" width="160" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-40" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="1130" y="550" width="360" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-41" value="TERMINAL" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1280" y="560" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-42" value="isatty" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1220" y="600" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-43" value="Verifie si le fd est un terminal" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="xASSBUbP35211GiZsTTk-42">
+          <mxGeometry y="25" width="160" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-47" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="-40" y="590" width="470" height="470" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-48" value="SIGNAL" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="160" y="610" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-49" value="kill" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="640" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-50" value="Envoie d&#39;un signal SIGKILL au PID passe en parametre." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="665" width="160" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-51" value="lstat" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1730" y="230" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-52" value="Retourne une struct stat d&#39;un lien symbolique passe en parametre" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="xASSBUbP35211GiZsTTk-51">
+          <mxGeometry y="25" width="160" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-53" value="opendir" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="970" y="270" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-54" value="Ouvre un directory, retourne un DIR *" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="xASSBUbP35211GiZsTTk-53">
+          <mxGeometry y="25" width="160" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-55" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="-930" y="60" width="470" height="470" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-56" value="OUTPUT" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-725" y="80" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-57" value="perror" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" vertex="1" parent="1">
+          <mxGeometry x="-840" y="110" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-58" value="Log une erreur systeme (probablement sur STDERR)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-840" y="135" width="160" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-59" value="prend deux fd[2] et creer un canal unidirectionnel. fd[0] est l&#39;element de droitie, fd[1] l&#39;element de gauche (write)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-110" y="245" width="160" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-61" value="sigaction" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="640" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-62" value="Appelle un handler (struct sigaction) en lui envoyant un signal" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="220" y="665" width="160" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-63" value="sigaddset" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-10" y="730" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-64" value="Remplis un sigset_t avec un signal" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-10" y="755" width="160" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-65" value="sigemptyset" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="730" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-66" value="Initialise a empty les signaux d&#39;un sigset_t" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="160" y="755" width="160" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-67" value="signal" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-50" y="820" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-68" value="Relie un signal a une fonction" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-50" y="845" width="160" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-69" value="stat" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1560" y="230" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-70" value="Comme fstat mais prend un pathname au lien d&#39;un fd" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="xASSBUbP35211GiZsTTk-69">
+          <mxGeometry y="25" width="160" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-71" value="strerror" style="swimlane;whiteSpace=wrap;html=1;startSize=20;" vertex="1" parent="1">
+          <mxGeometry x="-670" y="110" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-72" value="Convertis un code d&#39;erreur en message d&#39;erreur" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="xASSBUbP35211GiZsTTk-71">
+          <mxGeometry y="22.5" width="160" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-73" value="tcgetattr" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="910" y="-410" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-74" value="Retourne une struct termios avec les attributs du terminal" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="xASSBUbP35211GiZsTTk-73">
+          <mxGeometry y="25" width="160" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-75" value="tcs&lt;span style=&quot;background-color: initial;&quot;&gt;etattr&lt;/span&gt;" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="-320" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-76" value="Changes les attributs du terminal" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="xASSBUbP35211GiZsTTk-75">
+          <mxGeometry y="25" width="160" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-79" value="ttyname" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1220" y="690" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-80" value="Prend un fd et retourne le nom du terminal" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="xASSBUbP35211GiZsTTk-79">
+          <mxGeometry y="25" width="160" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-83" value="ttyslot" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="840" y="-320" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-84" value="Retourne le numero de slot du terminal" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="xASSBUbP35211GiZsTTk-83">
+          <mxGeometry y="25" width="160" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-85" value="unlink" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1420" y="340" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="xASSBUbP35211GiZsTTk-86" value="Supprime un fichier" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="xASSBUbP35211GiZsTTk-85">
+          <mxGeometry y="25" width="160" height="55" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
