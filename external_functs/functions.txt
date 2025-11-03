@@ -33,14 +33,14 @@ strerror, X
 perror, X
 isatty, X
 ttyname, X
-ttyslot,
-ioctl,
-getenv,
-tcsetattr,
-tcgetattr,
-tgetent,
-tgetflag,
-tgetnum,
-tgetstr,
-tgoto,
-tputs
+ttyslot, X
+ioctl, X
+getenv, X
+tcsetattr, X
+tcgetattr, X
+tgetent, X
+tgetflag, X
+tgetnum, X
+tgetstr, X
+tgoto, X
+tputs X
